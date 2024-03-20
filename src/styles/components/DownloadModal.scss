@@ -1,0 +1,96 @@
+// ПОИСКОВАЯ СТРОКА
+.download__modal-hidden {
+    opacity: 90;
+}
+.info {
+    &-box {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-top: 24px;
+        margin-bottom: 17px;
+        gap: 16px;
+        .search {
+            display: flex;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            &__icon {
+                position: absolute;
+                left: 10px;
+            }
+            input[type="text"]  {
+                padding-left: 40px;   
+            }
+            input {
+                padding-left: 40px;
+            }
+            input::-webkit-input-placeholder {
+                padding-left: 0px;
+                transform: translateY(2px);
+              }
+            &__input {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                width: 100%;
+                background: #FFFFFF;
+                border-radius: 10px;
+                padding: 10px 10px;
+                &::placeholder {
+                    padding-left: 20px;
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 17px;
+                    line-height: 22px;
+                    letter-spacing: -0.41px;
+                    color: #CCCECF;
+                }
+            }
+        }
+        .download {
+            &-icon {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                padding: 8px;
+                gap: 10px;
+                background: #FFFFFF;
+                border-radius: 6px;
+            }
+            &__modal {
+                display: none;
+                flex-direction: column;
+                justify-content: center;
+                align-items: flex-start;
+                padding: 16px;
+                gap: 24px;
+                position: absolute;
+                z-index: 97;
+                right: 0px;
+                margin-top: 10px;
+                background: #FFFFFF;
+                box-shadow: 0px 3px 10px rgba(162, 162, 167, 0.15);
+                border-radius: 6px;
+                &_active {
+                    display: flex;
+                }
+                &__button {
+                    background: none;
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                    letter-spacing: -0.24px;
+                    color: #2F3234;
+                    &:hover {
+                        opacity: 50%;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,309 @@
+.table__mode {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 0px 12px 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(162, 162, 167, 0.15);
+    border-radius: 10px;
+    &__list {
+        border-bottom: 1px solid #E1E2E3;
+        &:last-child {
+            border-bottom: none;
+        }
+        &__setting {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            padding: 24px 0px;
+            &__hilton {
+                display: flex;
+                gap: 32px;
+                &__image {
+                    display: flex;
+                    &__item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        position: relative;
+                        background: #2F3234;
+                        width: 106px;
+                        height: 106px;
+                        border-radius: 100px;
+                    }
+                    &__plus {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 28px;
+                        width: 28px;
+                        border-radius: 50px;
+                        background: #FF9500;
+                        border: 2px solid #FFFFFF;
+                        position: absolute;
+                        top: 105px;
+                        left: 85px;
+                    }
+                }
+                &__text {
+                    white-space: nowrap;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0px;
+                    gap: 8px;
+                    &__top {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 20px;
+                        text-align: right;
+                        letter-spacing: -0.24px;
+                        color: #FFFFFF;
+                        padding: 2px 8px;
+                        gap: 10px;
+                        background: #FF9500;
+                        border-radius: 4px;
+                    }
+                    &__center {
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 17px;
+                        line-height: 22px;
+                        letter-spacing: -0.41px;
+                        color: #2F3234;
+                        &__edit {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            &__input {
+                                max-width: 180px;
+                            }
+                        }
+                    }
+                    &__bottom {
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 15px;
+                        line-height: 20px;
+                        letter-spacing: -0.24px;
+                        color: #2F3234;
+                        &__edit {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            &__input {
+                                max-width: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+            &__description {
+                text-align: left;
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 500;
+                text-align: left;
+                font-size: 13px;
+                line-height: 18px;
+                letter-spacing: -0.08px;
+                color: #6F7173;
+                &__area {
+                    min-height: 86px;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: flex-start;
+                    padding: 16px;
+                    gap: 10px;
+                    background: #F5F6F7;
+                    border-radius: 10px;
+                }
+            }
+        }
+        &__filter {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            &__item {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                align-items: baseline;
+                gap: 10px;
+                &__name {
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 20px;
+                    letter-spacing: -0.24px;
+                    color: #2F3234;
+                }
+                &__description {
+                    display: flex;
+                    justify-content: flex-end;
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 15px;
+                    line-height: 20px;
+                    text-align: right;
+                    letter-spacing: -0.24px;
+                    gap: 10px;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    &__text {
+                        color: #FF9500;
+                        &_active {
+                            color: #2F3234;
+                        }
+                    }
+                    &__bacground {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        padding: 8px 8px 8px 16px;
+                        gap: 8px;
+                        background: #F5F6F7;
+                        border-radius: 6px;
+                        color: #2F3234;
+                        &__image {
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+                }
+            }
+            &__dropdown {
+                display: none;
+                padding-top: 20px;
+                background: #FFFFFF;
+                max-height: 300px;
+                width: 100%;
+                overflow-x: hidden;
+                &_active {
+                    display: flex;
+                }
+                &__list {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+                    text-align: left;  
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 15px;
+                    line-height: 20px;
+                    letter-spacing: -0.24px;
+                    &__item {
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 20px;
+                        letter-spacing: -0.24px;
+                        color: #2F3234;
+                        &-hidden {
+                            display: flex;
+                        }
+                        &:last-child {
+                            padding-bottom: 40px;
+                        }
+                        &-active {
+                            color: #FF9500;
+                        }
+                    }
+                }
+            }
+        }
+        &__item {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            align-items: stretch;
+            gap: 10px;
+            &__name {
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 15px;
+                line-height: 20px;
+                letter-spacing: -0.24px;
+                color: #2F3234;
+                &__text {
+                    &-gray {
+                        color: #CCCECF;
+                    }
+                }
+            }
+            &__description {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                gap: 10px;
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 20px;
+                text-align: right;
+                letter-spacing: -0.24px;
+                color: #2F3234;
+                word-break: break-word;
+                &__text {
+                    &__edit {
+                        display: flex;
+                        align-items: center;
+                        gap: 6px;
+                    }
+                    &__bacground {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: flex-start;
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 13px;
+                        line-height: 18px;
+                        text-align: right;
+                        letter-spacing: -0.08px;
+                        padding: 4px 8px;
+                        gap: 10px;
+                        border-radius: 6px;
+                        &-green {
+                            background: rgba(52, 199, 89, 0.1);
+                            color: #34C759;
+                        }
+                        &-red {
+                            background: rgba(255, 59, 48, 0.1);
+                            color: #FF3B30;
+                        }
+                        &-orange {
+                            background: rgba(255, 137, 29, 0.1);
+                            color: #FF9500;
+                        }
+                        &-blue {
+                            background: rgba(0, 122, 255, 0.1);
+                            color: #007AFF;
+                        }
+                        &-gray {
+                            background: #F5F6F7;
+                            color: #CCCECF;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

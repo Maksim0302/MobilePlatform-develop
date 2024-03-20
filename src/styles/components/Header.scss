@@ -1,0 +1,165 @@
+.header {
+    position: fixed;
+    z-index: 98;
+    width: 100%;
+    top: 0;
+    background: #FFFFFF;
+    &__item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        &__user {
+            position: relative;
+            &__message {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                border-radius: 50px;
+                width: 22px;
+                height: 22px;
+                left: 14px;
+                top: -8px;
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 11px;
+                line-height: 13px;
+                text-align: center;
+                letter-spacing: 0.07px;
+                color: #FFFFFF;
+                background: #FF9500;
+            }
+        }
+    }
+    &__sel {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        align-items: center;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        justify-content: space-between;
+        &__prev {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 26%;
+            cursor: pointer;
+            text-align: left;
+            gap: 13px;
+            &__text {
+                display: block;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 22px;
+                letter-spacing: -0.41px;
+                color: #FF9500;
+            }
+        }
+        &__center {
+            display: block;
+            width: 45%;
+            white-space: nowrap;
+            padding: 0px 5px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 22px;
+            text-align: center;
+            letter-spacing: -0.41px;
+            color: #2F3234;
+        }
+        &__ready {
+            white-space: nowrap;
+            display: block;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            text-align: right;
+            width: 26%;
+            cursor: pointer;
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 22px;
+            letter-spacing: -0.41px;
+            color: #FF9500;
+            &_off {
+                cursor: pointer;
+                color: #CCCECF;
+                &_active {
+                    color: #FF9500;
+                }
+            }
+        }
+    }
+    &__tabs {
+        display: flex;
+        // justify-content: space-between;
+        padding-top: 24px;
+        gap: 16px;
+        padding-bottom: 8px;
+        overflow-x: auto;
+        &__item {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            &__text {
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 20px;
+                letter-spacing: -0.24px;
+                color: #A2A5A7;
+                &_transparency {
+                    color: #E1E2E3;
+                }
+                &_active {
+                    position: relative;
+                    color: #2F3234;
+                    &:after {
+                        content: "";
+                        bottom: -8px;
+                        position: absolute;
+                        left: 0;
+                        height: 2px;
+                        background: #FF9500;
+                        border-radius: 10px 10px 0px 0px;
+                        right: 0;
+                        margin: 0 auto;
+                        display: block;
+                    }
+                }
+                &_grey {
+                    position: relative;
+                    color: #A2A5A7;;
+                    &:after {
+                        display: block;
+                        content: "";
+                        bottom: -8px;
+                        position: absolute;
+                        left: 0;
+                        height: 2px;
+                        background: #CCCECF;
+                        border-radius: 10px 10px 0px 0px;
+                        right: 0;
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+}

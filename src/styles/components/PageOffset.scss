@@ -1,0 +1,26 @@
+// ОТСТУПЫ 
+.page-offset {
+    &-bottom {
+        &-lg {
+            padding-bottom: 170px;
+        }
+        &-md {
+            padding-bottom: 117px;
+        }
+
+    }
+    &-top {
+        &-lg {
+            padding-top: 143px;
+        }
+        &-md {
+            padding-top: 133px;
+        }
+        &-sm {
+            padding-top: 90px;
+        }
+        &-xs {
+            padding-top: 80px;
+        }
+    }
+}

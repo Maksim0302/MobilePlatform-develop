@@ -1,0 +1,94 @@
+// АККОРДЕОН
+.accordion {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: -0.24px;
+    line-height: 20px;
+    position: fixed;
+    bottom: 74px;
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 10px 10px 0px 0px;
+    .plus::before{ 
+        display: block;
+        position: absolute;
+        content: '';
+        background: url('../images/arrow-accordion/1.svg') center no-repeat ;
+        right: 0;
+        right: 0;
+        top: 0;
+        width: 40px;
+        height: 100%;
+        font-size: 30px;
+        font-weight: 200;
+        color: #CCCECF;
+        transition: 0.5s ease-out;
+    } 
+    .less::after { 
+        display: block;
+        position: absolute;
+        content: '';
+        background: url('../images/arrow-accordion/2.svg') center no-repeat ;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        width: 40px;
+        height: 100%;
+        font-size: 30px;
+        font-weight: 200;
+        color: #CCCECF;
+        transition: 1s ease-out; 
+    }
+    &__button {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        margin-bottom: -1px;
+        width: 100%;
+        padding: 16px;
+        border:none ;
+        outline:none ;
+        cursor: pointer;
+        background: none;
+        font-weight: 600;
+        font-size: 15px;
+        color: #FF9500;
+    }
+    &__list { 
+        display: none;  
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 16px;
+        overflow: hidden; 
+        gap: 26px;
+        &__item {
+            display: flex;
+            flex-direction: column;
+            width: 27%;
+            gap: 5px;
+            &__text {
+                line-height: 12px;
+                color: #A2A5A7;
+            }
+            &__number {
+                font-size: 15px;
+                color: #2F3234;
+            }
+        }
+    }  
+} 
+.animation {
+    animation: animation .5s;
+    background: #FFFFFF;
+}
+// @keyframes animation {
+//     from{transform: scaleY(0)}
+//     to{transform: scaleY(1)}
+// }
+  
+  

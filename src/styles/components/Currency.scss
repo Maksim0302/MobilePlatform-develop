@@ -1,0 +1,27 @@
+//КУРС ВАЛЮТЫ
+.currency {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 8px;
+    &__item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: -0.24px;
+        color: #2F3234;
+        padding: 6px 9px;
+        border: 1px solid #E1E2E3;
+        border-radius: 10px;
+        gap: 5px;
+        &__right {
+            font-weight:300;
+        }
+    }
+}

@@ -1,0 +1,558 @@
+@charset "UTF-8";
+/*------------------------------*/
+.dashboard {
+    &__title {
+        margin-bottom: 16px;
+        &-md {
+            margin-top: 32px;
+        }
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 16px 0px;
+        min-height: 328px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 30px rgba(162, 162, 167, 0.15);
+        border-radius: 10px;
+        .static {
+            &__head {
+                &:last-child {
+                    border-bottom: none;
+                }
+                border-bottom: 1px solid #E1E2E3;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 16px;
+                padding-bottom: 16px;
+                &__left {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 6px;
+                    &__text {
+                        display: flex;
+                        flex-direction: column;
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        letter-spacing: -0.24px;
+                        &__title {
+                            font-weight: 600;
+                            font-size: 15px;
+                            line-height: 20px;
+                            color: #FF9500;
+                        }
+                        &__subtitle {
+                            font-weight: 500;
+                            font-size: 10px;
+                            line-height: 12px;
+                            color: #A2A5A7;
+                        }
+                    }
+                }
+            }
+            &__body {
+                &__list {
+                border-bottom: 1px solid #E1E2E3;
+                &:last-child {
+                    border-bottom: none;
+                }
+                    &__text {
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        font-size: 15px;
+                        line-height: 20px;
+                        letter-spacing: -0.24px;
+                        color: #2F3234;
+                        margin-top: 20px;
+                        margin-bottom: 20px;
+                        gap: 10px;
+                        &__left {
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+                            font-weight: 600; 
+                        }
+                        &__right {
+                            font-weight: 400;
+                            text-align: right;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*-----------------------------*/
+.system {
+    &__title {
+        margin-bottom: 16px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }   
+}
+/*--------------------*/
+.actions {
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/*----------------*/
+.status-cassette {
+    &__subtitle {
+        margin-top: 23px;
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 16px;
+        &__index {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            &-text {
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 11px;
+                line-height: 13px;
+                letter-spacing: 0.07px;
+                color: #2F3234;
+            }
+            &-black {
+                width: 8px;
+                height: 8px;
+                border-radius: 20px;
+                background: #2F3234;
+            }
+            &-green {
+                width: 8px;
+                height: 8px;
+                border-radius: 20px;
+                background: #34C759;
+            }
+            &-red {
+                width: 8px;
+                height: 8px;
+                background: #FF3B30;
+                border-radius: 20px;
+            }
+        }
+    }
+}
+/*---------------------*/
+.status-hopper {
+    &__title {
+        margin-bottom: 24px;
+    }
+}
+/*----------------------*/
+.analitics {
+    &__title {
+        margin-bottom: 16px;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        .charts {
+            background: #FFFFFF;
+            box-shadow: 0px 4px 30px rgba(162, 162, 167, 0.15);
+            border-radius: 10px;
+            &__title {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 24px 34px 0px 16px;
+                &__left {
+                    display: flex;
+                    align-items: baseline;
+                    gap: 6px;
+                    &__text {
+                        &__title {
+                            font-family: 'SF Pro Display';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 15px;
+                            line-height: 20px;
+                            letter-spacing: -0.24px;
+                            color: #FF9500;
+                        }
+                        &__subtitle {
+                            font-family: "SF Pro Display";
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 10px;
+                            line-height: 12px;
+                            letter-spacing: -0.24px;
+                            color: #A2A5A7;
+                        }
+                    }
+                }
+            }
+            &__name {
+                padding-left: 16px;
+                margin-top: 24px;
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 11px;
+                line-height: 13px;
+                display: flex;
+                align-items: center;
+                letter-spacing: 0.07px;
+            }
+            &__schedule {
+                margin-top: 16px;
+                padding-bottom: 25px;
+                padding-left: 16px;
+                img {
+                    width: 100%;
+                }
+                border-bottom: 1px solid #E1E2E3;;
+            }
+            &__footer {
+                padding: 20px 16px 20px 16px;
+                &__static {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    &__operation {
+                        white-space: nowrap;
+                        display: flex;
+                        gap: 2px;
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        font-size: 15px;
+                        line-height: 20px;
+                        letter-spacing: -0.24px;
+                        color: #2F3234;
+                        &__meaning {
+                            font-weight: 400;
+                        }
+                        &__item {
+                            font-weight: 600;
+                        }
+                    }
+                    &__day {
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 20px;
+                        letter-spacing: -0.24px;
+                        color: #FF9500;
+                    }
+                }
+                &__property {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    &__operation {
+                        white-space: nowrap;
+                        display: flex;
+                        gap: 2px;
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        font-size: 15px;
+                        line-height: 20px;
+                        letter-spacing: -0.24px;
+                        color: #2F3234;
+                        &__meaning {
+                            font-weight: 400;
+                            &__text {
+                                &__item{
+                                     font-weight: 600;
+                                }
+                            }
+                        }
+                        &__item {
+                            font-weight: 600;
+                        }
+                    }
+                    &__day {
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 20px;
+                        letter-spacing: -0.24px;
+                        color: #FF9500;
+                    }
+                }
+            }
+        }
+    }
+}
+/*--------------------*/
+.profile {
+    padding-top: 90px;
+    padding-bottom: 117px;
+    .setting {
+        &__content {
+            margin-top: 16px;
+        }
+    }
+    /*------------------*/
+    .alerts {
+        margin-top: 32px;
+        &__content {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            margin-top: 16px;
+            padding: 0px 16px;
+            background: #FFFFFF;
+            box-shadow: 0px 4px 30px rgba(162, 162, 167, 0.15);
+            border-radius: 10px;
+            &__item {
+                border-bottom: 1px solid #E1E2E3;
+                padding: 20px 0px;
+                &:last-child {
+                    border-bottom: none;
+                }
+                &__user {
+                    display: flex;
+                    align-items: center;
+                    &__icon {
+                        width: 10px;
+                        height: 10px;
+                        background: #34C759;
+                        border-radius: 50px;
+                        margin-right:  8px;
+                    }
+                    &__whom {
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 20px;
+                        letter-spacing: -0.24px;
+                        color: #2F3234;
+                        margin-right: 4px;
+                    }
+                    &__name {
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 20px;
+                        letter-spacing: -0.24px;
+                        color:  #FF9500;
+                    }
+                }
+                &__text {
+                    margin-top: 8px;
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 13px;
+                    line-height: 18px;
+                    letter-spacing: -0.08px;
+                    color: #6F7173;
+                }
+                &__date {
+                    margin-top: 24px;
+                    font-family: 'SF Pro Display';
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 11px;
+                    line-height: 13px;
+                    text-align: left;
+                    letter-spacing: 0.07px;
+                    color: #A2A5A7;
+                }
+            }
+        }
+    }
+}
+/*--------------------*/
+.newletter {
+    margin-top: 90px;
+    width: 100%;
+    position: fixed;
+    padding-top: 8px;
+    height: 100%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(162, 162, 167, 0.15);
+    border-radius: 10px;
+    &__content {
+        margin-top: 32px;
+        display: flex;
+        flex-direction: column;
+        padding: 0px 16px;
+        &__title {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 19px;
+            line-height: 24px;
+            letter-spacing: -0.49px;
+            color: #2F3234;
+        }
+        &__whom {
+            margin-top: 35px;
+            &__name {
+                margin-bottom: 20px;
+                display: flex;
+                gap: 10px;
+                justify-content: space-between;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #E1E2E3;
+                &__left {
+                    display: flex;
+                    width: 100%;
+                    gap: 10px;
+                    &-recipient {
+                        font-family: 'SF Pro Display';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 15px;
+                        line-height: 20px;
+                        letter-spacing: -0.24px;
+                        color: #2F3234;
+                    }
+                    &__user {
+                        width: 100%;
+                        display: flex;
+                        &-item {
+                            display: none;
+                            flex-direction: row;
+                            align-items: flex-start;
+                            padding: 4px 8px;
+                            background: rgba(255, 149, 0, 0.08);
+                            border-radius: 4px;
+                            font-family: 'SF Pro Display';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 20px;
+                            letter-spacing: -0.24px;
+                            color: #FF9500;
+                        }
+                        &-names {
+                            width: 100%;
+                            font-family: 'SF Pro Display';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 15px;
+                            line-height: 20px;
+                            letter-spacing: -0.24px;
+                            color: #FF9500;
+                        }
+                    }
+                } 
+            }
+        }
+        &__description {
+            margin-top: 24px;
+            #large {
+                background: none;
+                width: 100%;
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 20px;
+                letter-spacing: -0.24px;
+                color: #2F3234;
+            }
+        }
+    } 
+    .swipe {
+        &__line {
+            width: 64px;
+            height: 6px;
+            margin: 0 auto;
+            background: #CCCECF;
+            border-radius: 30px;
+        }
+    }
+    .choice {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 22px 0px 22px;
+        &__cancel {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            letter-spacing: -0.41px;
+            color: #FF9500;
+        }
+        &__send {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 22px;
+            display: flex;
+            align-items: center;
+            text-align: right;
+            letter-spacing: -0.41px;
+            color: #CCCECF;
+            &_active {
+                color:  #FF9500;;
+            }
+        }
+    }
+}
+/*---------------------*/
+.client {
+    padding-top: 90px;
+    padding-bottom: 85px;
+    &__alerts {
+        display: flex;
+        gap: 4px;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 19px;
+        line-height: 24px;
+        letter-spacing: -0.49px;
+        &-left {
+            color: #2F3234;
+        }
+        &-right {
+            color: #FF9500;
+        }
+    }
+    &__text {
+        margin-top: 24px;
+        &-information {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 20px;
+            letter-spacing: -0.24px;
+            color: #6F7173;
+        }
+    }
+    &__date {
+        margin-top: 24px;
+        &-information {
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: -0.08px;
+            color: #A2A5A7;
+        }
+    }
+}
+/*---------------------*/
+
+

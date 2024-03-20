@@ -1,0 +1,98 @@
+.modal__active {
+    display: flex;
+}
+.deletes {
+    background: none;
+}
+// МОДАЛЬНОЕ ОКНО ПРОФИЛЯ УДАЛИТЬ\ОТПРАВИТЬ 
+.modal {
+    display: none;
+    flex-direction: column;
+    z-index: 999;
+    position: absolute;
+    max-width: 270px;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    bottom: 0;
+    &_active {
+        display: flex;
+    }
+    &__wrapper {
+        width: 100%;
+        background: rgba(242, 242, 242, 0.8);
+        backdrop-filter: blur(11px);
+        border-radius: 14px;
+        &__body {
+            display: flex;
+            padding: 0 10px;
+            flex-direction: column;
+            margin-top: 16px;
+            gap: 8px;
+            border-bottom: 1px solid lightgrey;
+            padding-bottom: 16px;
+            &__title {
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 17px;
+                line-height: 22px;
+                text-align: center;
+                letter-spacing: -0.41px;
+                color: #000000;
+            }
+            &__description {
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 15px;
+                line-height: 20px;
+                text-align: center;
+                letter-spacing: -0.24px;
+                color: #000000;
+            }
+        }
+        &__buttons__wrapper {
+            display: flex;
+            font-family: 'SF Pro Display';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 22px;
+            justify-content: center;
+            align-items: center;
+            letter-spacing: -0.41px;
+            color: #FF9500;
+            width: 100%;
+            &__button {
+                display: flex;
+                align-items: center;
+                background: none;
+                font-family: 'SF Pro Display';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 17px;
+                line-height: 22px;
+                text-align: center;
+                letter-spacing: -0.41px;
+                color: #FF9500;
+                border-right: 1px solid lightgrey;
+                height: 44px;
+                width: 50%;
+                justify-content: center;
+                &:last-child {
+                    border-right: none;
+                }
+                &-bold {
+                    font-weight: 600;
+                }
+                &-full {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

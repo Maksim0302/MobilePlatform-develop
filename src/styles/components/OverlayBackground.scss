@@ -1,0 +1,13 @@
+// МЕНЯЕТ БЕГРАУНД ПРИ ПОЯВЛЕНИИ ОКНА С КНОПКАМИ
+.overlay {
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 998;
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(2.5px);
+    &_active {
+        display: block;
+    }
+}

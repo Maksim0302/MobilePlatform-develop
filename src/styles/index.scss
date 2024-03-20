@@ -1,0 +1,22 @@
+@import "./base/reset.scss";
+@import "./components/Accordion.scss";
+@import "./components/Button.scss";
+@import "./components/Checkbox.scss";
+@import "./components/DownloadModal.scss";
+@import "./components/Header.scss";
+@import "./components/Currency.scss";
+@import "./components/ModalProfile.scss";
+@import "./components/NavigationBar.scss";
+@import "./components/OverlayBackground.scss";
+@import "./components/PageOffset.scss";
+@import "./components/PhotoModal.scss";
+@import "./components/Subtitle.scss";
+@import "./components/TabBar.scss";
+@import "./components/TableMode.scss";
+@import "./components/Tables.scss";
+@import "./components/Title.scss";
+@import "./pages.scss";
+
+.header__item__logo img {
+    width: 25px;
+}
